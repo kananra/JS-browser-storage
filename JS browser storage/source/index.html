@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous" defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    defer></script>
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal"
+                >Səbət <span class="sr-only">(current)</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="products">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4">
+              <div class="card">
+                <img src="./assets/images/2023 ASUS ROG Strix G18.webp" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title text-center" data-id="G18">ASUS ROG Strix G18 G814JI-N6062 90NR0D01-M002U0 (2023)</h5>
+                  <p class="card-text text-center">18″ 240Hz/3ms, WQXGA 2.5K (2560×1600)/i9-13980HX/RAM 16GB DDR5-4800MHz/SSD 1TB Gen4/RTX 4070 8GB..</p>
+                  <div class="price-box d-flex justify-content-between">
+                    <h3>5249₼</h3>
+                    <button class="btn btn-outline-primary basket" data-toggle="modal" data-target="#exampleModal">Səbətə at</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="./assets/images/2023 ASUS ROG Strix G16.webp" class="card-img-top img-size">
+                <div class="card-body">
+                  <h5 class="card-title text-center">ASUS ROG Strix G16 G614JI-N4083 90NR0D42-M003W0 (2023)</h5>
+                  <p class="card-text text-center">16″ 240Hz/3ms, WQXGA 2.5K (2560×1600)/i9-13980HX/16GB DDR5-4800MHz/SSD 1TB Gen4/RTX 4070 8GB..</p>
+                  <div class="price d-flex justify-content-between">
+                    <h3>4989₼</h3>
+                    <button class="btn btn-outline-primary basket" data-toggle="modal" data-target="#exampleModal">Səbətə at</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="./assets/images/2023 ASUS ROG Strix G17.webp" class="card-img-top img-size">
+                <div class="card-body">
+                  <h5 class="card-title text-center">ASUS ROG Strix G17 G713PV-LL047 90NR0C34-M005T0 (2023)</h5>
+                  <p class="card-text text-center">17.3″ 240Hz/3ms, WQHD 2K (2560×1440)/R9-7845HX/RAM 16GB DDR5-4800MHz/SSD 1TB Gen4/RTX 4060 8GB.</p>
+                 <div class="price d-flex justify-content-between">
+                  <h3>4989₼</h3>
+                  <button class="btn btn-outline-primary basket" data-toggle="modal" data-target="#exampleModal">Səbətə at</button>
+                 </div>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="./assets/images/ASUS ROG G513RC.webp" class="card-img-top img-size">
+                <div class="card-body">
+                  <h5 class="card-title text-center">ASUS ROG Strix G15 G513IM-HN008 90NR0522-M00680</h5>
+                  <p class="card-text text-center">15.6″ 144Hz/R7-6800H/RAM 16GB DDR5-4800MHz/SSD 512GB Gen4/RTX 3050 4GB..</p>
+                  <div class="price d-flex justify-content-between">
+                    <h3>4989₼</h3>
+                    <button class="btn btn-outline-primary basket" data-toggle="modal" data-target="#exampleModal">Səbətə at</button>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="modal">
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Səbət</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body cart">
+        <h2>Səbətim</h2>
+       <ul id="cart-items"></ul>
+      </div>
+    </div>
+  </div>
+</div>
+      </section>
+    </main>
+  </body>
+</html>
